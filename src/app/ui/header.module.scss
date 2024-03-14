@@ -1,0 +1,31 @@
+$header-height: 50px;
+
+.header {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .33);
+  display: flex;
+  font-size: 16px;
+  height: $header-height;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  + main {
+    height: calc(100vh - $header-height);
+    margin-top: $header-height;
+    overflow-y: scroll;
+  }
+
+  .star {
+    height: 24px;
+    width: 24px;
+    transition: transform .33s ease-in-out;
+    &:hover {
+      transform: scale(1.1)
+    }
+  }
+}

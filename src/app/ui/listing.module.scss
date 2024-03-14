@@ -1,0 +1,50 @@
+@media all and (min-width: 420px) {
+  .main {
+    align-items: flex-start;
+    display: flex;
+
+    > div {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .img {
+    margin-bottom: 0;
+    margin-right: 15px;
+    img {
+      display: block;
+    }
+  }
+}
+
+.img {
+  display: inline-flex;
+  margin-bottom: 5px;
+  min-height: 150px;
+  min-width: 150px;
+  img {
+    border-radius: 4px;
+    transition: transform .33s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.title {
+  font-size: 22px;
+  margin: 0 0 5px;
+}
+
+.location, .info {
+  font-size: 14px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}

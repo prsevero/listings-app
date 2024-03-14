@@ -1,0 +1,28 @@
+.button {
+  align-items: center;
+  align-self: flex-start;
+  background: #08f;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  height: 38px;
+  letter-spacing: 2px;
+  padding: 0 25px;
+  text-transform: uppercase;
+  transition: all .22s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &[disabled] {
+    background: #999;
+    pointer-events: none;
+    user-select: none;
+  }
+}

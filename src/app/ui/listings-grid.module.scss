@@ -1,0 +1,21 @@
+.empty {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 768px)  {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media all and (min-width: 1200px)  {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  > div {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,147 @@
+.img-wrapper {
+  position: relative;
+  
+  button {
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    height: 30px;
+    justify-content: center;
+    opacity: .7;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 30px;
+    transition: opacity .22s ease-in-out;
+    svg {
+      height: 70%;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &:last-child {
+      line-height: .1;
+      right: 6px;
+    }
+  }
+}
+
+.img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+.location-and-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date,
+.info,
+.location {
+  font-size: 16px;
+}
+
+.location-and-date {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 7px 0;
+}
+
+.info {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  margin: 7px 0 10px;
+  > span {
+    background: #0d7;
+    border-radius: 10px;
+    display: flex;
+    padding: 8px 12px;
+    margin: 0 5px 5px 0;
+  }
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.divider {
+  margin: 25px 0;
+}
+
+/* Form */
+.form-title {
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+
+.feedback,
+.feedback-error {
+  margin: 0 0 25px;
+}
+.feedback {
+  color: #0a0;
+}
+.feedback-error {
+  color: #c00;
+}
+
+.fieldset {
+  border: 0;
+}
+
+.label {
+  display: block;
+  margin: 0 0 15px;
+}
+
+.input {
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #333;
+  font-family: var(--font-inter);
+  font-size: 15px;
+  height: 38px;
+  margin: 0 0 5px;
+  outline: 0;
+  padding: 0 12px;
+  width: 100%;
+  transition: all .22s ease-in-out;
+  &:focus {
+    border-color: #666;
+  }
+}
+
+textarea.input {
+  min-height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.fieldset[disabled] .input {
+  background: #eee;
+}
+
+.error {
+  color: #c00;
+  font-size: 14px;
+}

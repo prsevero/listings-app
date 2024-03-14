@@ -1,0 +1,49 @@
+@mixin range-thumb {
+  appearance: none;
+  background: #aaa;
+  border-radius: 50%;
+  cursor: ew-resize;
+  height: 18px;
+  margin-top: -6.5px;
+  width: 18px;
+  transition: background .3s ease-in-out;
+  &:hover {
+    background: #ccc;
+  }
+}
+
+@mixin range-track {
+  background: #777;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 5px;
+  position: relative;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.input {
+  appearance: none;
+  width: 100%;
+  &::-webkit-slider-thumb {
+    @include range-thumb;
+  }
+  &::-moz-range-thumb {
+    @include range-thumb;
+  }
+  &::-ms-thumb {
+    @include range-thumb;
+  }
+  &::-webkit-slider-runnable-track {
+    @include range-track;
+  }
+  &::-moz-range-track {
+    @include range-track;
+  }
+  &::-ms-track {
+    @include range-track;
+  }
+}
