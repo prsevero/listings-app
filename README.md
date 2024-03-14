@@ -1,8 +1,10 @@
-# Live demo
-The project can be accessed [here](http://157.230.144.73/).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2b5f050b-5e0a-42cb-b161-03a942f43b47/deploy-status)](https://app.netlify.com/sites/app-listings/deploys)
 
-# Project strucuture
-The demo link serves the NextJS application, and it consumes a simple ExpressJS API, which serves the listings' array and handles the contact form. The filters of the listings are handled by the frontend, not by the API. Also, the API has some timeouts just to delay the response and looks more like a _real API call_.
+# Live demo
+The project can be accessed [here](https://app-listings.netlify.app/).
+
+# Project
+Minimalist Listings App: simple design, intuitive interface, essential features.
 
 # Scripts
 After installing the dependencies, with `npm install` or with your preferred package manager, you can run the following commands:
